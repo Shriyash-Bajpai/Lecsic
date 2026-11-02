@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="icons/icon48.png" alt="">
+      <div>
+        <h1>Lecsic</h1>
+        <p>lectures &amp; music, in rhythm</p>
+      </div>
+    </div>
+    <label class="switch" title="Turn Lecsic on/off">
+      <input type="checkbox" id="enabled" checked>
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <section class="tab-card">
+    <img id="fav" alt="">
+    <div class="tab-meta">
+      <div id="title">…</div>
+      <div id="host"></div>
+    </div>
+  </section>
+
+  <div class="label">This tab is a</div>
+  <div class="roles">
+    <button data-role="lecture">
+      <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      <span>Lecture</span>
+    </button>
+    <button data-role="music">
+      <svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      <span>Music</span>
+    </button>
+    <button data-role="none">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+      <span>None</span>
+    </button>
+  </div>
+
+  <section class="status" id="status">
+    <div class="eq"><i></i><i></i><i></i><i></i><i></i></div>
+    <div>
+      <div id="status-main">Idle</div>
+      <div id="status-sub"></div>
+    </div>
+  </section>
+
+  <footer>
+    Right-click a page → <b>Lecsic</b> · or right-click the icon<br>for <b>one-click mode</b><br>
+    or press <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd> / <kbd>M</kbd> / <kbd>X</kbd>
+  </footer>
+  <script src="popup.js"></script>
+</body>
+</html>

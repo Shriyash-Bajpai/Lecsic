@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Lecsic",
+  "version": "2.1.0",
+  "description": "Lectures and music, in rhythm. Music pauses when your lecture plays and fades back in when you pause to take notes.",
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "permissions": ["tabs", "storage", "scripting", "contextMenus"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Lecsic",
+    "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png" }
+  },
+  "commands": {
+    "mark-lecture": { "suggested_key": { "default": "Alt+Shift+L" }, "description": "Mark this tab as Lecture" },
+    "mark-music":   { "suggested_key": { "default": "Alt+Shift+M" }, "description": "Mark this tab as Music" },
+    "clear-mark":   { "suggested_key": { "default": "Alt+Shift+X" }, "description": "Clear this tab's mark" }
+  }
+}
